@@ -1,0 +1,104 @@
+:root{
+    --primary-color: #353B50;
+    --secondary-color: #fa4475;
+    --contrast-color: #7E8287;
+}
+
+body, html{
+    background-color: #a5a5a5;
+}
+
+.row{
+    margin: 45px -50px;
+    width: 800px;
+}
+
+div#blue.col-6{
+    background-color:#353B50;  
+    padding-bottom: 25px;
+    border-radius: 25px 0px 0px 25px ;
+}
+
+h2#welcome{
+    color: var(--secondary-color);  
+    margin-top: 50%;
+    text-align: center;
+}
+
+p{
+    color: var(--contrast-color);  
+}
+
+p#message{
+    color: var(--contrast-color);
+    text-align: center;
+}
+
+button.btn.btn-danger{
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+div.col-6{
+    background-color: #ffffff;
+}
+
+h2#create-account{
+    color: var(--secondary-color);
+}
+
+h2#create-account,
+#icons{
+    margin-left: 25px;
+}
+
+#icons a i{
+    font-size: 150%;
+    padding: 15px;
+}
+
+.form-control{
+    width: 85%;
+}
+
+button.btn.btn-danger#join{
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    .row{
+        margin: 0;     
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    div#blue.col-6{
+        background-color:#353B50;  
+        width: 100%;
+        padding-bottom: 25px;
+        border-radius: 0px;
+    }
+
+    h2#welcome{
+        color: var(--secondary-color);  
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    div.col-6{
+        background-color: white;
+        width: 100%;     
+    }
+    
+    h2#create-account,
+    #icons{
+        margin-left: 10%;
+    }
+
+    p.pt-3{
+        position: relative;
+        right: 5%;
+    }
+
+}
